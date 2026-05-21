@@ -1,0 +1,26 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - disabled
+jobs:
+  build:
+    name: Build and deploy
+    runs-on: yc-arc
+    env:
+      OWNER: mechta-market
+      IMAGE: svc:latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - run: go mod download
+
+      # - run: go test -v ./...
+
+      - run: make
+
+      - run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $ --password-stdin
+
+      - run: docker build -t ghcr.io/$OWNER/$IMAGE .
+
+      - run: docker push ghcr.io/$OWNER/$IMAGE
