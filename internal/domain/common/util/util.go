@@ -1,8 +1,8 @@
 package util
 
 import (
-	"github.com/mechta-market/gotemplate/internal/domain/common/model"
-	"github.com/mechta-market/gotemplate/internal/errs"
+	"github.com/yerlan/dota2/internal/domain/common/model"
+	"github.com/yerlan/dota2/internal/errs"
 )
 
 const (

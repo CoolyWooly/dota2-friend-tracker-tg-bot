@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/mechta-market/gotemplate/internal/app"
+	"github.com/yerlan/dota2/internal/app"
 )
 
 func main() {
