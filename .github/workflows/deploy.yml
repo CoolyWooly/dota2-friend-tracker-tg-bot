@@ -2,14 +2,14 @@ name: Deploy
 on:
   push:
     branches:
-      - disabled
+      - master
 jobs:
   build:
     name: Build and deploy
     runs-on: yc-arc
     env:
-      OWNER: mechta-market
-      IMAGE: svc:latest
+      OWNER: yerlan
+      IMAGE: dota2:latest
     steps:
       - uses: actions/checkout@v6
 
