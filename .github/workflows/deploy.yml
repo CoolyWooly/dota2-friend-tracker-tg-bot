@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Build and deploy
-    runs-on: yc-arc
+    runs-on: ubuntu-latest
     env:
       OWNER: yerlan
       IMAGE: dota2:latest
