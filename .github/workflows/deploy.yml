@@ -8,7 +8,7 @@ jobs:
     name: Build and deploy
     runs-on: ubuntu-latest
     env:
-      OWNER: yerlan
+      OWNER: coolywooly
       IMAGE: dota2:latest
     steps:
       - uses: actions/checkout@v6
