@@ -1,4 +1,4 @@
-# gotemplate
+# Dota 2 tracker
 
 ### DB dump:
 
